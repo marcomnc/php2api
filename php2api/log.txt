@@ -1,0 +1,211 @@
+2013-02-15T14:39:30+01:00 DEBUG: Richiamo Funzione AuthLogin
+2013-02-15T14:39:30+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [user] => Quanto
+            [password] => quanto
+        )
+
+)
+
+2013-02-15T14:39:30+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:30+01:00 DEBUG: Array
+(
+    [0] => Auth
+    [1] => Login
+    [2] => Array
+        (
+            [user] => Quanto
+            [password] => quanto
+        )
+
+)
+
+2013-02-15T14:39:30+01:00 DEBUG: Return 
+2013-02-15T14:39:30+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => string
+    [array] => 
+    [value] => 578b2909a285840ff6d726cc35d8c729
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Richiamo Funzione TrekkingGetTrekkingOpen
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [sessionId] => 578b2909a285840ff6d726cc35d8c729
+            [filter] => 1
+        )
+
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [0] => Trekking
+    [1] => GetTrekkingOpen
+    [2] => Array
+        (
+            [filter] => 1
+        )
+
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Return 
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => intDictionary
+    [array] => 1
+    [value] => Array
+        (
+            [0] => Array
+                (
+                    [key] => 5215
+                    [value] => WEEKEND312_301212BO_5215
+                )
+
+            [1] => Array
+                (
+                    [key] => 5216
+                    [value] => GIORNO12_281012BO_5216
+                )
+
+        )
+
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Richiamo Funzione AuthLogout
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [sessionId] => 578b2909a285840ff6d726cc35d8c729
+        )
+
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [0] => Auth
+    [1] => Logout
+    [2] => Array
+        (
+            [sessionId] => 578b2909a285840ff6d726cc35d8c729
+        )
+
+)
+
+2013-02-15T14:39:32+01:00 DEBUG: Return 
+2013-02-15T14:39:32+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => string
+    [array] => 
+    [value] => 578b2909a285840ff6d726cc35d8c729
+)
+
+2013-02-15T14:39:44+01:00 DEBUG: Richiamo Funzione AuthLogin
+2013-02-15T14:39:44+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [user] => Quanto
+            [password] => quanto
+        )
+
+)
+
+2013-02-15T14:39:44+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:44+01:00 DEBUG: Array
+(
+    [0] => Auth
+    [1] => Login
+    [2] => Array
+        (
+            [user] => Quanto
+            [password] => quanto
+        )
+
+)
+
+2013-02-15T14:39:44+01:00 DEBUG: Return 
+2013-02-15T14:39:44+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => string
+    [array] => 
+    [value] => 32eb7cc58b2416e25b0ee08795834ee5
+)
+
+2013-02-15T14:39:45+01:00 DEBUG: Richiamo Funzione TrekkingCostTreck
+2013-02-15T14:39:45+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [sessionId] => 32eb7cc58b2416e25b0ee08795834ee5
+            [trekkCode] => GIORNO12_281012BO_5216
+            [PDCCode] => 90-2-3
+            [value] => 80
+        )
+
+)
+
+2013-02-15T14:39:45+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:45+01:00 DEBUG: Array
+(
+    [0] => Trekking
+    [1] => CostTreck
+    [2] => Array
+        (
+            [trekkCode] => GIORNO12_281012BO_5216
+            [PDCCode] => 90-2-3
+            [value] => 80
+        )
+
+)
+
+2013-02-15T14:39:45+01:00 DEBUG: Return 
+2013-02-15T14:39:45+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => string
+    [array] => 
+    [value] => OK
+)
+
+2013-02-15T14:39:46+01:00 DEBUG: Richiamo Funzione AuthLogout
+2013-02-15T14:39:46+01:00 DEBUG: Array
+(
+    [0] => stdClass Object
+        (
+            [sessionId] => 32eb7cc58b2416e25b0ee08795834ee5
+        )
+
+)
+
+2013-02-15T14:39:46+01:00 DEBUG: Eseguo la funzione 
+2013-02-15T14:39:46+01:00 DEBUG: Array
+(
+    [0] => Auth
+    [1] => Logout
+    [2] => Array
+        (
+            [sessionId] => 32eb7cc58b2416e25b0ee08795834ee5
+        )
+
+)
+
+2013-02-15T14:39:46+01:00 DEBUG: Return 
+2013-02-15T14:39:46+01:00 DEBUG: Array
+(
+    [optional] => 
+    [type] => string
+    [array] => 
+    [value] => 32eb7cc58b2416e25b0ee08795834ee5
+)
+

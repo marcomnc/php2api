@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <api>
+        <server>
+            <sessionFolder>var\session</sessionFolder>
+            <methodLogin>AuthLogin</methodLogin>
+        </server>
+        <class>
+            <classfolder>application/models/</classfolder>
+    <!-- Null -> Nessun framework
+        CI -> Code Igniter
+        ZEND -> Zend -->
+            <framework>CI</framework>
+        </class>
+        <wsdl>
+            <targetNamespace>TrekkingItaliaAPI</targetNamespace>
+            <service_name>TrekkingService</service_name>
+            <protocol>http</protocol> <!-- http / https -->
+            <url>trekpanel/api/ws/</url>
+            <entry_point>TrekkItalia_Api_Model_Server_Wsi_HandlerPortType</entry_point>
+            <port_name>TrekkItalia_Api_Model_Server_Wsi_HandlerPort</port_name>
+            <binding_name>TrekkItalia_Api_Model_Server_Wsi_HandlerBinding</binding_name>            
+        </wsdl>
+        <resource>
+<!--            <test>
+                <model class="Test_api" file="api/Test_api.php" frameworkClass="api/Test_api">
+                    <title>Prova prima classe per API</title>
+                    <methods>
+                        <sum>
+                            <title>Somma di 2 addendi</title>                    
+                            <method>somma</method>
+                        </sum>                    
+                        <difference>
+                            <title>sottrazione di 2 addendi</title>                    
+                        </difference>                    
+                    </methods>
+                    <fault>
+                        <generic_error>
+                            <code>666</code>
+                            <description>The Number of the beast</description>
+                        </generic_error>
+                    </fault>
+                </model>
+                <model class="Second_test" file="api/Second_test.php">
+                    <title>Prova seconda classe per le API</title>
+                    <methods>                        
+                        <retrunstring>
+                            <title>Ritorna la stringa che hai inserito</title>
+                            <method>getYourString</method>
+                        </retrunstring>
+                    </methods>
+                </model>
+            </test>-->
+            <Auth>
+                <model class="Auth" file="api/auth.php" frameworkClass="api/Auth">
+                    <title>Gestione della security</title>
+                    <methods>
+                        <login>
+                            <title>Login al WS. Ritorna un identificativo di sessione valido per 30 min</title>
+                        </login>
+                        <logout>
+                            <title>Logout dal WS. Chiude la sessione in corso</title>
+                        </logout>
+                    </methods>
+                </model>
+            </Auth>
+            <Trekking>
+                <model class="Api_trekking" file="api/api_trekking.php" frameworkClass="api/Api_trekking">
+                    <title>Calsse per le api del trekking pannel</title>
+                    <methods>                        
+                        <getTrekkingList>
+                            <title>Ritorna la lista dei trekking</title>
+                        </getTrekkingList>
+                        <getTrekkingOpen>
+                            <title>Ritorna la lista dei trekking che non sono stati messi come chiusi da quanto</title>
+                        </getTrekkingOpen>
+                        <getTrekkingPayment>
+                            <title>Ritorna la lista dei pagamenti di un dterminato trekking</title>
+                        </getTrekkingPayment>
+                        <closeTrek>
+                            <title>Chiusura del consuntivo del trakking</title>
+                        </closeTrek>
+                        <costTreck>
+                            <title>Caricamento dei costi del Trekking</title>
+                        </costTreck>
+                    </methods>
+                </model>
+            </Trekking>
+        </resource>
+    </api>
+</config>
